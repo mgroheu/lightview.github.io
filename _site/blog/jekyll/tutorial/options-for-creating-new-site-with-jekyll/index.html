@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Begin DNS prefetch
+================================================== -->
+<!-- Add prefetch DNS for your files -->
+
+<link rel=”preconnect dns-prefetch” href=”//fonts.googleapis.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//fonts.gstatic.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//use.fontawesome.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//stats.g.doubleclick.net/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//ajax.googleapis.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//googletagmanager.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//google-analytics.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//stackpath.bootstrapcdn.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//cdnjs.cloudflare.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//unpkg.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//smashwidgets.com/” crossorigin>
+<link rel=”preconnect dns-prefetch” href=”//paypal.com/” crossorigin>
+
+<!-- End DNS prefetch
+================================================== -->
+
+<!-- Begin Google Analytics
+================================================== -->
+
+<!-- End Google Analytics
+================================================== -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Options for creating a new site with Jekyll | Lightview</title>
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Options for creating a new site with Jekyll | Lightview</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="Options for creating a new site with Jekyll" />
+<meta name="author" content="jane" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="jekyll new &lt;PATH&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called myblog. Here are some additional details:" />
+<meta property="og:description" content="jekyll new &lt;PATH&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called myblog. Here are some additional details:" />
+<link rel="canonical" href="http://localhost:4000/blog/jekyll/tutorial/options-for-creating-new-site-with-jekyll/" />
+<meta property="og:url" content="http://localhost:4000/blog/jekyll/tutorial/options-for-creating-new-site-with-jekyll/" />
+<meta property="og:site_name" content="Lightview" />
+<meta property="og:image" content="http://localhost:4000/assets/images/13.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-23T00:00:00+01:00" />
+<script type="application/ld+json">
+{"datePublished":"2019-01-23T00:00:00+01:00","image":"http://localhost:4000/assets/images/13.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/jekyll/tutorial/options-for-creating-new-site-with-jekyll/"},"author":{"@type":"Person","name":"jane"},"description":"jekyll new &lt;PATH&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called myblog. Here are some additional details:","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"jane"},"@type":"BlogPosting","url":"http://localhost:4000/blog/jekyll/tutorial/options-for-creating-new-site-with-jekyll/","headline":"Options for creating a new site with Jekyll","dateModified":"2019-01-23T00:00:00+01:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+    <!-- Bootstrap Modified -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/theme.css">
+
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+ 
+</head>
+
+<body class="">
+
+    <!-- Navbar -->
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html"><strong>Lightview</strong></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               <!--  Replace menu links here -->
+
+<li class="nav-item">
+<a class="nav-link" href="/index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/authors-list.html">Authors</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact.html">Contact</a>
+</li>
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://www.wowthemes.net/donate/">Buy me a coffee <i class="fa fa-coffee text-danger"></i></a>
+</li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+                <script src="/assets/js/lunr.js"></script>
+
+<script>
+$(function() {
+    $("#lunrsearchresults").on('click', '#btnx', function () {
+        $('#lunrsearchresults').hide( 1000 );
+        $( "body" ).removeClass( "modal-open" );
+    });
+});
+    
+
+var documents = [{
+    "id": 0,
+    "url": "http://localhost:4000/404/",
+    "title": "",
+    "body": " 404 Page not found :(  The requested page could not be found. "
+    }, {
+    "id": 1,
+    "url": "http://localhost:4000/about.html",
+    "title": "About",
+    "body": "Made with by Sal @wowthemesnet. "
+    }, {
+    "id": 2,
+    "url": "http://localhost:4000/author-arianna-carta.html",
+    "title": "Arianna Carta",
+    "body": "                        {{page. title}} :         {{ site. authors. arianna. site }}         {{ site. authors. arianna. bio }}                                        Posts by {{page. title}}:       {% assign posts = site. posts | where: author , arianna  %}      {% for post in posts %}      {% include main-loop-card. html %}      {% endfor %}  "
+    }, {
+    "id": 3,
+    "url": "http://localhost:4000/author-jane.html",
+    "title": "Jane",
+    "body": "                        {{page. title}} Follow:         {{ site. authors. jane. site }}         {{ site. authors. jane. bio }}                                   Posts by {{page. title}}:       {% assign posts = site. posts | where: author , jane  %}      {% for post in posts %}      {% include main-loop-card. html %}      {% endfor %}  "
+    }, {
+    "id": 4,
+    "url": "http://localhost:4000/author-sal.html",
+    "title": "Sal",
+    "body": "                        {{page. title}} Follow:         {{ site. authors. sal. site }}         {{ site. authors. sal. bio }}                                   Posts by {{page. title}}:       {% assign posts = site. posts | where: author , sal  %}      {% for post in posts %}      {% include main-loop-card. html %}      {% endfor %}  "
+    }, {
+    "id": 5,
+    "url": "http://localhost:4000/authors-list.html",
+    "title": "Authors",
+    "body": "{{page. title}}:     {% for author in site. authors %}                                         {{ author[1]. name }} :       (View Posts)      {{ author[1]. bio }}                          &nbsp;       &nbsp;                                    {% endfor %}  "
+    }, {
+    "id": 6,
+    "url": "http://localhost:4000/buy-me-a-coffee.html",
+    "title": "Buy me a coffee",
+    "body": "Hi! I am Sal, web designer &amp; developer at WowThemes. net. The free items I create are my side projects and Mundana for Jekyll is one of them. You can find all the work I release for free here. You have my permission to use the free items I develop in your personal, commercial or client projects. If you’d like to reward my work, I would be honored and I could dedicate more time maintaining the free projects. Thank you so much! Buy me a coffee "
+    }, {
+    "id": 7,
+    "url": "http://localhost:4000/categories.html",
+    "title": "Categories",
+    "body": "          Categories          {% for category in site. categories %}     {{ category[0] }}:           {% assign pages_list = category[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
+    }, {
+    "id": 8,
+    "url": "http://localhost:4000/comment-policy",
+    "title": "Comment policy",
+    "body": "Keep it civil aka don’t be a jerk: We’re going to get into the thick of a lot of heated discussions and that’s okay. These discussions often entail topics that we all personally care a lot about and will passionately defend. But in order for discussions to thrive here, we need to remember to criticize ideas, not people.   So, remember to avoid:  name-calling ad hominem attacks Responding to a post’s tone instead of its actual content.  knee-jerk contradictionComments that we find to be hateful, inflammatory, or harassing may be removed. If you don’t have something nice to say about another user, don’t say it. Treat others the way you’d like to be treated. Always strive to add value to every interaction and discussion you participate in: There are a lot of discussions that happen every day on Disqus. Before joining in a discussion, browse through some of the most recent and active discussions happening in the community, especially if you’re new there.   If you are not sure your post adds to the conversation, think over what you want to say and try again later. Keep it tidy: Help make moderators’ lives easier by taking a moment to ensure that what you’re about to post is in the right place. That means:  don’t post off-topic comments or discussions don’t cross-post the same thing multiple times review any specific posting guidelines for the community check if another active discussion on your topic has already been postedIf you see something, say something: Moderators are at the forefront of combatting spam, mediating disputes and enforcing community guidelines and, so are you.   If you see an issue, contact the moderators if possible or flag any comments for review. If you believe someone has violated the Basic Rules, report it to Disqus by flagging the user’s profile. No Self-promotion A discussion or comment that contains only a link to your blog, a product, or your article on another site will almost always be removed. Choose Your (Curse) Words Wisely Comments that contain profanity are automatically held for moderator review before being posted. Depending on the context of the comment, it may be removed. Profanity used to insult, antagonize, or inflame will always be removed. Don’t Be a Jerk Personal attacks and harassment will not be tolerated. Sexist, racist, misogynist, homophobic, and broad, offensive generalizations about groups of people are simply not allowed. Comments or discussions written intentionally to provoke will also be removed. Don’t Copy and Paste If you didn’t write it, or haven’t properly cited the article you’re quoting, don’t post it. English Only We currently only support English-only discussions on Disqus channels. Non-English comments and discussions will be removed. Related: Guide to building community guidelines: "
+    }, {
+    "id": 9,
+    "url": "http://localhost:4000/contact.html",
+    "title": "Contact",
+    "body": "  Please send your message to {{site. name}}. We will reply as soon as possible!   "
+    }, {
+    "id": 10,
+    "url": "http://localhost:4000/",
+    "title": "Mundana Free Jekyll Theme",
+    "body": "  {% if page. url ==  /  %}            {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 200px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 136 }}               In         {% for category in latest_post. categories %}        {{ category }},         {% endfor %}                                {{ latest_post. date | date: '%b %d, %Y' }}                            {%- assign second_post = site. posts[1] -%}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       In             {% for category in second_post. categories %}            {{ category }},             {% endfor %}                                                      {{ second_post. date | date: '%b %d, %Y' }}                                    {%- assign third_post = site. posts[2] -%}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       In             {% for category in third_post. categories %}            {{ category }},             {% endfor %}                                                      {{ third_post. date | date: '%b %d, %Y' }}                                    {%- assign fourth_post = site. posts[3] -%}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       In             {% for category in fourth_post. categories %}            {{ category }},             {% endfor %}                                                      {{ fourth_post. date | date: '%b %d, %Y' }}                                  {% for post in site. posts %} {% if post. tags contains  sticky  %}                    {{post. title}}                  {{ post. excerpt | strip_html | strip_newlines | truncate: 136 }}                 Read More            	             {% endif %}{% endfor %}  {% endif %}                All Stories:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Prev       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Next &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
+    }, {
+    "id": 11,
+    "url": "http://localhost:4000/privacy-policy.html",
+    "title": "Privacy Policy",
+    "body": "”{{site. name}}” takes your privacy seriously. To better protect your privacy we provide this privacy policy notice explaining the way your personal information is collected and used. Privacy: We are committed to protecting your right to privacy as a user of our online documents. It is our policy to respect the privacy of private communication. This Privacy Policy only relates to the  {{ site. name }}  and does not extend to your use of the Internet outside of the  {{ site. name }} site. Like most website operators, we collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request.  {{ site. name }}  purpose in collecting non-personally identifying information is to better understand how our visitors use its website. Our websites may, from time to time, contain links to external sites. We are not responsible for the privacy policies or the content of such sites and we recommend that you read the privacy policies on any external sites you use. Cookies: Cookies are small text files placed on your computer by websites or sometimes by emails. They provide useful information to companies, which helps in all sorts of ways. For you, it means you can use the site more efficiently and save time by not having to re-enter your details each time you visit. They also make sure you receive the most relevant information from us. For us, cookies help us to analyse how our customers interact with our sites so we can make improvements. We only use Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users’ computers. The information generated relating to our website is used to create reports about the use of the website. Google will store this information. Cookies do not contain any information that personally identifies you, but personal information that we store about you may be linked, by us, to the information stored in and obtained from cookies.  {{ site. name }} visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using  {{ site. name }}  websites, with the drawback that certain features of  {{ site. name }}  websites may not function properly without the aid of cookies. Third party cookies: Video, social sharing, content embedding and other services on our site are operated by other companies. These companies may drop cookies on your computer when you use them on our site. We do not have access to these cookies. Social sharing: LinkedIn This Website uses plugins which are provided by LinkedIn Corporation and can be identified by the LinkedIn logo or e. g. the words “Linkedin” or “in”. If you access a page on our Website that includes this plugin, your browser sets up a direct connection to LinkedIn’s servers. Thereby LinkedIn receives the information that you and your IP address have accessed this Website. If you click on the LinkedIn „Share“-Button while you are logged into you LinkedIn account, you can link the content of this Website on your LinkedIn-Profile which enables LinkedIn to allocate the visit to our Website to your LinkedIn account. We as the Website operator do not know the content of the data transferred to LinkedIn or how LinkedIn uses such data. For information on the purpose and extent of data collection, the further processing and use of such data by LinkedIn, as well as your rights in this regard and your setting options for the protection of your privacy, please refer to LinkedIn’s privacy policy. Twitter This Website uses social plugins which are provided by Twitter Inc. and can be identified by the Twitter logo or e. g. the words “Tweet” or “Twitter”. The plugins enable the user to share an article or a page of this Website on Twitter. If you access a website that includes this plugin, your browser sets up a direct connection to Twitter’s servers. Twitter transfers the plugin’s content directly to your browser which will then integrate it into the website. Therefore we have no influence on the extent or content of the data that Twitter collects via its plugin, and thus, can only inform you based on our current understanding. According to our knowledge, log information such as the user’s IP address, the URL of the referring website, etc. , is transmitted to Twitter. Additional information is available in Twitter’s privacy policy. Facebook This Website uses plugins which are provided by Facebook Inc. and can be identified by the Facebook logo or e. g. the words “Facebook” or “F”. If you access a page on our Website that includes such a social plugin, your browser sets up a direct connection to the Facebook servers. Facebook transfers the social plugin’s content directly to your browser which will then integrate it into the Website. Therefore, we have no influence on the extent of the data that Facebook collects via its social plugins, and thus, can only inform you based on our current understanding: Through integration of the plugin, Facebook obtains the information that you have accessed the respective page on our Website, even if you are not a registered user of Facebook or are not logged into Facebook. This information as well as your browser’s IP address are transferred to Facebook’s server in the United States and is stored there. According to Facebook, only anonymized IP addresses are stored from non-registered users in Germany. If you are logged in to Facebook, Facebook can allocate the visit to our Website to your Facebook account. Facebook receives such information irrespective of whether you interact with the social plugins or not. If you do interact with the social plugins, e. g. by using the “Like-it-Button” or by posting a commentary, your browser will transfer such information directly to Facebook where it is being stored. Such information will also be published on Facebook and be displayed to your Facebook friends. For information on the purpose and extent of data collection, the further processing and use of such data by Facebook, as well as your rights in this regard and your setting options for the protection of your privacy, please refer to Facebook’s privacy policy. If you are a Facebook member and do not want Facebook to collect data on you via our Website and to combine such data with your Facebook membership data, you need to log off from Facebook before accessing our Website. Furthermore, you may also block social plugins by downloading and installing add-ons for your browser, such as the Facebook blocker. Newsletter: The email addresses provided by our subscribers is used solely for the delivery of our newsletter. Email addresses will not be published or given to any third parties. You can unsubscribe from our newsletter by using the link found within in each email. Your email address will then be removed from our subscriber list. Information is gathered on when and how often, newsletter issues are opened by recipients. This data is collected on an anonymous, statistical basis, i. e. we do not store when an individual recipient has opened a newsletter email. Contact form: Data entered by you into our contact form, such as name, email address, subject and message body will be used and stored by us for the purpose of our individual communication with you. Comments: Some of our content pages allow you to leave comments. Your comment, including your name, will be published on our website after approval by a site administrator and may be removed upon your request. The email address supplied with comments will not be published. These email addresses are stored as long as the comment is on our site. We reserve the right to use your email address to individually contact you in relation to the subject matter of your comment. Privacy policy changes: Although most changes are likely to be minor,  {{ site. name }}  may change its Privacy Policy from time to time, and in  {{ site. name }}  sole discretion.  {{ site. name }}  encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change. Contact Information: For any questions or concerns regarding the privacy policy, please contact us here.  The Privacy Statement posted on this site was updated on April 12, 2016 "
+    }, {
+    "id": 12,
+    "url": "http://localhost:4000/tags.html",
+    "title": "Tags",
+    "body": "          Tags          {% for tag in site. tags %}     {{ tag[0] }}:           {% assign pages_list = tag[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
+    }, {
+    "id": 13,
+    "url": "http://localhost:4000/terms",
+    "title": "TERMS OF USE",
+    "body": "The following TERMS OF USE and PRIVACY POLICY are subject to change at any time and the sole discretion of the Site owner and operator. Please visit the site regularly for updates. Terms of use: Please read the following Terms of Use relating to your use of the  {{ site. name }} . By using the  {{ site. name }}  (other than to read this page for the first time), you agree to comply with all of the Terms of Use set forth herein. The right to use the Web Site is personal to you and is not transferable to any other person or entity. BY ACCESSING AND USING THE  {{ site. name }} , YOU EXPRESSLY AGREE TO THESE TERMS OF USE. IF YOU DO NOT AGREE TO ABIDE BY THESE TERMS, DO NOT ACCESS OR USE THE WEBSITE  {{ site. name }}  ({{ site. url }}). Owners and collectors of information: These Terms of Use apply to your use of all of the Sites and services owned, hosted, or operated by Maximilian Groh (collectively  we,   us,  or  our ), including the following: {{ site. baseurl }} These Terms of Use also apply to any other site that we have owned or operated, do own and operate or may own or operate in the future including social media (LinkedIn, Google+, Facebook, Twitter etc. ) sites (collectively, the  Sites ). Unless we say otherwise, all references to the Sites in these Terms of Use include all such Sites. These Terms of Use do not apply to your use of unaffiliated Sites to which any of the Sites may link to or direct you to. Copyrights and trademarks: All materials contained on the  {{ site. name }}  are Copyright © {{ site. time | date:  %Y  }} by Maximilian Groh. All rights reserved. Unless otherwise noted, you may access and use the information and materials within the Sites for your personal use. You may not change, modify, delete, display, transmit, adapt, exploit, or copy for distribution or sale any information, material, trademark, or copyright on the Sites. You must obtain written permission from us before you may publish, distribute, display, or commercially exploit any material from the Sites. By using the Sites, you agree to abide by all copyright notices or other posted restrictions. Disclaimers: All content on the  {{ site. name }}  have been created with care and in good faith. The information, services, products, claims, topics, and materials on our Sites are provided  as is  and without warranties of any kind, either expressed or implied. We disclaim all warranties, expressed or implied, including but not limited to implied effectiveness of the ideas or strategies listed on the  {{ site. name }} . Under no circumstances shall we be liable under any theory of recovery, at law or in equity, for any damages, including without limitation, special, direct, incidental, consequential or punitive damages (including, but not limited to loss of use or lost profits), arising out of or in any manner connected with the use of information or services, or the failure to provide information or services, from the  {{ site. name }} . Indemnity: By accepting these Terms of Use and accessing and/or using the products and services available through this site, you agree to indemnify and hold us harmless from any demands, loss, liability, claims or expenses (including attorneys' fees), made against us by any third party due to or arising out of or in connection with your use of the site, the products and/or services. Unsolicited idea submission policy: We do not accept or consider unsolicited ideas, including ideas for new or improved services or products, enhancements, materials, marketing plans or new product names. Please do not submit any unsolicited ideas, creative artwork, suggestions or other works ( submissions ) in any form to us. The purpose of this policy is to avoid potential misunderstandings or disputes if we work might seem similar to ideas submitted to us. If you still send us ideas even though we have asked you not to, the following terms shall apply to your submissions. Terms of idea submissions: In sending us any Submissions, you agree that: (1) the submission and its contents automatically become our the property, without any compensation to you; (2) We may use or redistribute the submissions and their contents for any purpose and in any way; (3) there is no obligation for us to review the submission; and (4) there is no obligation to keep any submissions confidential. Links to the Site: We permits links from third party sites to content on the site. We expressly disclaims any responsibility for the accuracy, content, or availability of information found on sites that link to the site. Linking should not suggest that we (a) promotes or endorses any third party's causes, ideas, Web sites, products or services, or (b) authorizes the use of content from the site for commercial purposes. We reserve the right to withdraw permission for any link. Links to third-party web sites: The  {{ site. name }}  may provide hyperlinks to third-party web sites as a convenience to users of the  {{ site. name }} .  {{ site. name }}  does not control third-party web sites and is not responsible for the contents of any linked-to, third-party web sites or any hyperlink in a linked-to web site. We do not endorse, recommend or approve any third-party web site hyperlinked from the  {{ site. name }}  We will have no liability to any entity for the content or use of the content available through such hyperlink. We will immediately remove the respective link if we become aware of a legal violation. Privacy policy: Please refer to the separate menu item Privacy policy. Governed by and construed in accordance with the laws of Germany: These terms will be governed by and construed in accordance with the laws of Germany (Munich), without regard to any principles of conflicts of law. You agree that any action at law or in equity that arises out of or relates to these terms will be subject to mediation in Germany (Munich). Changes to these terms of use: We reserve the right to change these terms of use at any time by posting new terms of use at this location. "
+    }, {
+    "id": 14,
+    "url": "http://localhost:4000/robots.txt",
+    "title": "",
+    "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
+    }, {
+    "id": 15,
+    "url": "http://localhost:4000/page2/",
+    "title": "Mundana Free Jekyll Theme",
+    "body": "  {% if page. url ==  /  %}            {% assign latest_post = site. posts[0] %}          &lt;div class= topfirstimage  style= background-image: url({% if latest_post. image contains  ://  %}{{ latest_post. image }}{% else %} {{site. baseurl}}/{{ latest_post. image}}{% endif %}); height: 200px;  background-size: cover;  background-repeat: no-repeat; &gt;&lt;/div&gt;           {{ latest_post. title }}  :       {{ latest_post. excerpt | strip_html | strip_newlines | truncate: 136 }}               In         {% for category in latest_post. categories %}        {{ category }},         {% endfor %}                                {{ latest_post. date | date: '%b %d, %Y' }}                            {%- assign second_post = site. posts[1] -%}                        {% if second_post. image %}                         &lt;img class= w-100  src= {% if second_post. image contains  ://  %}{{ second_post. image }}{% else %}{{ second_post. image | absolute_url }}{% endif %}  alt= {{ second_post. title }} &gt;                        {% endif %}                                    {{ second_post. title }}          :                       In             {% for category in second_post. categories %}            {{ category }},             {% endfor %}                                                      {{ second_post. date | date: '%b %d, %Y' }}                                    {%- assign third_post = site. posts[2] -%}                        {% if third_post. image %}                         &lt;img class= w-100  src= {% if third_post. image contains  ://  %}{{ third_post. image }}{% else %}{{site. baseurl}}/{{ third_post. image }}{% endif %}  alt= {{ third_post. title }} &gt;                        {% endif %}                                    {{ third_post. title }}          :                       In             {% for category in third_post. categories %}            {{ category }},             {% endfor %}                                                      {{ third_post. date | date: '%b %d, %Y' }}                                    {%- assign fourth_post = site. posts[3] -%}                        {% if fourth_post. image %}                        &lt;img class= w-100  src= {% if fourth_post. image contains  ://  %}{{ fourth_post. image }}{% else %}{{site. baseurl}}/{{ fourth_post. image }}{% endif %}  alt= {{ fourth_post. title }} &gt;                        {% endif %}                                    {{ fourth_post. title }}          :                       In             {% for category in fourth_post. categories %}            {{ category }},             {% endfor %}                                                      {{ fourth_post. date | date: '%b %d, %Y' }}                                  {% for post in site. posts %} {% if post. tags contains  sticky  %}                    {{post. title}}                  {{ post. excerpt | strip_html | strip_newlines | truncate: 136 }}                 Read More            	             {% endif %}{% endfor %}  {% endif %}                All Stories:         {% for post in paginator. posts %}          {% include main-loop-card. html %}        {% endfor %}                   {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Prev       {% else %}        &laquo;       {% endif %}       {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}       {% endfor %}       {% if paginator. next_page %}        Next &raquo;       {% else %}        &raquo;       {% endif %}            {% endif %}                     {% include sidebar-featured. html %}      "
+    }, {
+    "id": 16,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/powerful-things-markdown-editor-rev/",
+    "title": "Powerful things you can do with the Markdown editor Rev",
+    "body": "2019/06/24 - There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using. Special formatting: As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:  strike through ==highlight== *escaped characters*Writing code blocks: There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: 123. my-link {  text-decoration: underline;}If you want to get really fancy, you can even add syntax highlighting using Rouge.  Reference lists: The quick brown jumped over the lazy. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Full HTML: Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example: "
+    }, {
+    "id": 17,
+    "url": "http://localhost:4000/blog/jekyll/welcome-to-jekyll/",
+    "title": "Welcome to Jekyll!",
+    "body": "2019/02/04 - You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post. ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: {% highlight ruby %}def print_hi(name) puts “Hi, #{name}”endprint_hi(‘Tom’)#=&gt; prints ‘Hi, Tom’ to STDOUT. {% endhighlight %} Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. "
+    }, {
+    "id": 18,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/powerful-things-markdown-editor/",
+    "title": "Powerful things you can do with the Markdown editor",
+    "body": "2019/02/03 - There are lots of powerful things you can do with the Markdown editor. If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using. Special formatting: As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:  strike through ==highlight== *escaped characters*Writing code blocks: There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: 123. my-link {  text-decoration: underline;}If you want to get really fancy, you can even add syntax highlighting using Rouge.  Reference lists: The quick brown jumped over the lazy. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Full HTML: Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example: "
+    }, {
+    "id": 19,
+    "url": "http://localhost:4000/blog/tutorial/first-mass-produced/",
+    "title": "The first mass-produced book to deviate from a rectilinear format",
+    "body": "2019/02/02 - The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.  It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother. To deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.  The claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother. "
+    }, {
+    "id": 20,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/education/",
+    "title": "Education must also train one for quick, resolute and effective thinking.",
+    "body": "2019/02/01 - There are lots of powerful things you can do with the Markdown editor If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using. Special formatting: As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:  strike through ==highlight== *escaped characters*Writing code blocks: There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: 123. my-link {  text-decoration: underline;}If you want to get really fancy, you can even add syntax highlighting using Rouge.  Reference lists: The quick brown jumped over the lazy. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Full HTML: Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example: "
+    }, {
+    "id": 21,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/acumulated-experience/",
+    "title": "Accumulated experience of social living",
+    "body": "2019/01/30 - The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother. The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.  It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. "
+    }, {
+    "id": 22,
+    "url": "http://localhost:4000/blog/jekyll/about-bundler/",
+    "title": "About Bundler",
+    "body": "2019/01/29 - gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details: bundler is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires. The Gemfile and Gemfile. lock files inform Bundler about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit bundle exec and just run jekyll serve. When you run bundle exec jekyll serve, Bundler uses the gems and versions as specified in Gemfile. lock to ensure your Jekyll site builds with no compatibility or dependency conflicts. For more information about how to use Bundler in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly. "
+    }, {
+    "id": 23,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/we-all-wait-for-summer/",
+    "title": "We all wait for summer",
+    "body": "2019/01/28 - This is changed. As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end. It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life. "
+    }, {
+    "id": 24,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/tree-of-codes/",
+    "title": "Tree of Codes",
+    "body": "2019/01/27 - The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.  It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”. The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. "
+    }, {
+    "id": 25,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/red-riding/",
+    "title": "Red Riding Hood",
+    "body": "2019/01/26 - The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.  It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother. "
+    }, {
+    "id": 26,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/press-and-education/",
+    "title": "Press and education",
+    "body": "2019/01/25 - Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction. Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one’s self is very difficult.  We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically. The function of education, therefore, is to teach one to think intensively and to think critically. But education which stops with efficiency may prove the greatest menace to society. The most dangerous criminal may be the man gifted with reason, but with no morals. The late Eugene Talmadge, in my opinion, possessed one of the better minds of Georgia, or even America. Moreover, he wore the Phi Beta Kappa key. By all measuring rods, Mr. Talmadge could think critically and intensively; yet he contends that I am an inferior being. Are those the types of men we call educated? We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living. "
+    }, {
+    "id": 27,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/options-for-creating-new-site-with-jekyll/",
+    "title": "Options for creating a new site with Jekyll",
+    "body": "2019/01/23 - jekyll new &lt;PATH&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called myblog. Here are some additional details:  To install the Jekyll site into the directory you’re currently in, run jekyll new . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.  jekyll new automatically initiates bundle install to install the dependencies required. (If you don’t want Bundler to install the gems, use jekyll new myblog --skip-bundle. ) By default, the Jekyll site installed by jekyll new uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.  We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use jekyll new myblog --blank To learn about other parameters you can include with jekyll new, type jekyll new --help. "
+    }, {
+    "id": 28,
+    "url": "http://localhost:4000/blog/jekyll/never-stopped-worrying-never-loved-bomb/",
+    "title": "Never stopped worrying or loving the bomb",
+    "body": "2019/01/22 - I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them. So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble: I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.  Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life. I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them. So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble: I don’t want you to think that I’m boasting: Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life. I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.  So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences. In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble: I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it. Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life. "
+    }, {
+    "id": 29,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/is-intelligence-enough/",
+    "title": "Is Intelligence Enough",
+    "body": "2019/01/21 - Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one’s self is very difficult. We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically.  Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction. The function of education, therefore, is to teach one to think intensively and to think critically. But education which stops with efficiency may prove the greatest menace to society. The most dangerous criminal may be the man gifted with reason, but with no morals. The late Eugene Talmadge, in my opinion, possessed one of the better minds of Georgia, or even America. Moreover, he wore the Phi Beta Kappa key. By all measuring rods, Mr. Talmadge could think critically and intensively; yet he contends that I am an inferior being. Are those the types of men we call educated? We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living. "
+    }, {
+    "id": 30,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/quick-start-guide/",
+    "title": "Quick Start Guide",
+    "body": "2019/01/20 - If you already have a full Ruby development environment with all headers and RubyGems installed (see Jekyll’s requirements), you can create a new Jekyll site by doing the following: 12345678910111213# Install Jekyll and Bundler gems through RubyGemsgem install jekyll bundler# Create a new Jekyll site at . /myblogjekyll new myblog# Change into your new directorycd myblog# Build the site on the preview serverbundle exec jekyll serve# Now browse to http://localhost:4000"
+    }, {
+    "id": 31,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/markup-example/",
+    "title": "Markdown Example",
+    "body": "2019/01/19 - You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post. ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: def print_hi(name) puts  Hi, #{name} endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT. Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. "
+    }, {
+    "id": 32,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/customer-service/",
+    "title": "What is Jekyll",
+    "body": "2019/01/18 - No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here. Sick of dealing with hosting companies? GitHub Pages are powered by Jekyll, so you can easily deploy your site using GitHub for free-custom domain name and all. What is Jekyll?: Jekyll is a simple, blog-aware, static site generator. You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server. Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free. "
+    }, {
+    "id": 33,
+    "url": "http://localhost:4000/blog/jekyll/tutorial/charm-old-cities/",
+    "title": "Could we reinvent the charm of old cities",
+    "body": "2019/01/18 - Bucharest’s history alternated periods of development and decline from the early settlements in antiquity until its consolidation as the national capital of Romania late in the 19th century. First mentioned as the “Citadel of București” in 1459, it became the residence of the famous Wallachian prince Vlad III the Impaler. Early 18th century woodcut of Bucharest: The Ottomans appointed Greek administrators (Phanariotes) to run the town from the 18th century. A short-lived revolt initiated by Tudor Vladimirescu in 1821 led to the end of the rule of Constantinople Greeks in Bucharest. [19] The Old Princely Court (Curtea Veche) was erected by Mircea Ciobanul in the mid-16th century. Under subsequent rulers, Bucharest was established as the summer residence of the royal court. During the years to come, it competed with Târgoviște on the status of capital city after an increase in the importance of southern Muntenia brought about by the demands of the suzerain power – the Ottoman Empire. Bucharest finally became the permanent location of the Wallachian court after 1698 (starting with the reign of Constantin Brâncoveanu). Partly destroyed by natural disasters and rebuilt several times during the following 200 years, and hit by Caragea’s plague in 1813–14, the city was wrested from Ottoman control and occupied at several intervals by the Habsburg Monarchy (1716, 1737, 1789) and Imperial Russia (three times between 1768 and 1806). It was placed under Russian administration between 1828 and the Crimean War, with an interlude during the Bucharest-centred 1848 Wallachian revolution. Later, an Austrian garrison took possession after the Russian departure (remaining in the city until March 1857). On 23 March 1847, a fire consumed about 2,000 buildings, destroying a third of the city. "
+    }];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+
+
+    
+function lunr_search(term) {
+    $('#lunrsearchresults').show( 1000 );
+    $( "body" ).addClass( "modal-open" );
+    
+    document.getElementById('lunrsearchresults').innerHTML = '<div id="resultsmodal" class="modal fade show d-block"  tabindex="-1" role="dialog" aria-labelledby="resultsmodal"> <div class="modal-dialog shadow-lg" role="document"> <div class="modal-content"> <div class="modal-header" id="modtit"> <button type="button" class="close" id="btnx" data-dismiss="modal" aria-label="Close"> &times; </button> </div> <div class="modal-body"> <ul class="mb-0"> </ul>    </div> <div class="modal-footer"><button id="btnx" type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button></div></div> </div></div>';
+    if(term) {
+        document.getElementById('modtit').innerHTML = "<h5 class='modal-title'>Search results for '" + term + "'</h5>" + document.getElementById('modtit').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><small><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></small></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>Sorry, no results found. Close & try a different search!</li>";
+        }
+    }
+    return false;
+}
+</script>
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+
+
+<form class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+<input type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter..."> 
+</form>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
+
+    <!-- Content -->
+    <main role="main" class="site-content">
+        
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row  justify-content-between ">
+				<div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						
+                          <a class="sscroll text-danger" href="/categories.html#jekyll">jekyll</a><span class="sep">, </span>
+						
+                          <a class="sscroll text-danger" href="/categories.html#tutorial">tutorial</a><span class="sep">, </span>
+						
+						
+						 </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">Options for creating a new site with Jekyll</h1>
+
+					
+
+					<div class="d-flex align-items-center">
+                        
+                        <img class="rounded-circle" src="/assets/images/avatar2.jpg" alt="Jane" width="70"/>
+                        
+						<small class="ml-3"> 			
+							<a target="_blank" class="link-dark" href="/author-jane">Jane</a>&nbsp;<a target="_blank" href="" class="btn btn-outline-success btn-sm btn-round ml-2" title="Follow me on Linkedin"><i class="fab fa-linkedin-in"></i></a>&nbsp;
+							<span class="text-muted d-block mt-1">Blogger, fashionista, love to explore new ideas and write on my morning coffee!</span>
+							
+                            <span class="text-muted d-block mt-1">I posted this article on <time class="post-date" datetime="Jan 23rd, 2019">Jan 23rd, 2019 ·  <span class="reading-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+    </time></span> 
+						</small>
+					</div>
+				</div>
+                
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="/assets/images/13.jpg" alt="Options for creating a new site with Jekyll">
+				</div>
+                
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+        
+        
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+					
+				</div>
+			</div>
+		</div>
+        
+        
+		<div class="col-md-12 col-lg-8">
+            
+            <!-- Article -->
+			<article class="article-post">                
+			<p><code class="language-plaintext highlighter-rouge">jekyll new &lt;PATH&gt;</code> installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called <code class="language-plaintext highlighter-rouge">myblog</code>. Here are some additional details:</p>
+
+<ul>
+  <li>To install the Jekyll site into the directory you’re currently in, run <code class="language-plaintext highlighter-rouge">jekyll new</code> . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new</code> automatically initiates <code class="language-plaintext highlighter-rouge">bundle install</code> to install the dependencies required. (If you don’t want Bundler to install the gems, use <code class="language-plaintext highlighter-rouge">jekyll new myblog --skip-bundle</code>.)</li>
+  <li>By default, the Jekyll site installed by <code class="language-plaintext highlighter-rouge">jekyll new</code> uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.</li>
+  <li>We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use <code class="language-plaintext highlighter-rouge">jekyll new myblog --blank</code></li>
+  <li>To learn about other parameters you can include with <code class="language-plaintext highlighter-rouge">jekyll new</code>, type <code class="language-plaintext highlighter-rouge">jekyll new --help</code>.</li>
+</ul>
+                
+			</article>
+			
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">	<small><b>Tags:</b></small> 
+				
+				</span>
+			</div>
+
+ 			<!-- Image Credits -->
+	 		<div class="mb-4">
+				<span class="taglist">	<small><b>Image credits:</b></small> 
+				
+				</span>
+			</div>
+
+            <!-- Mailchimp Subscribe Form -->
+            
+			
+			            
+             <!-- Author Box -->
+                
+            
+            <!-- Comments -->
+            
+                <!--  Don't edit anything here. Set your disqus id in _config.yml -->
+
+<div id="comments" class="mt-5">
+    <div id="disqus_thread">
+    </div>
+    <script type="text/javascript">
+        var disqus_shortname = 'lightview'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+    Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+</div>
+            
+            
+		</div>
+        
+        
+	</div>
+</div>
+
+
+<!-- Aletbar Prev/Next -->
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="/blog/jekyll/never-stopped-worrying-never-loved-bomb/"> <img height="30px" class="mr-1" src="/assets/images/14.jpg">  Never stopped worrying or loving the bomb</a>
+            </div>
+          
+          
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="/blog/jekyll/tutorial/press-and-education/"> Press and education  <img height="30px" class="ml-1" src="/assets/images/7.jpg"> </a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+    </main>
+
+
+    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/theme.js"></script>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div>
+                <span class="navbar-brand mr-2 mb-0"><strong>Lightview</strong></span>
+                <span>Copyright © <script>document.write(new Date().getFullYear())</script> · </span>
+
+                <span><a rel="privacy" href="/privacy-policy">Privacy policy</a> · <a rel="terms" href="/terms">Terms of use</a></span>
+
+            </div>
+            <div>
+                Made with <a target="_blank" class="text-dark" href="https://www.wowthemes.net/mundana-jekyll-theme/"> Mundana Jekyll Theme </a> and adapted by <a class="text-dark font-weight-bold" target="_blank" href="https://mgroh.eu">Dr. Maximilian Groh</a>.
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- All this area goes before </body> closing tag --> 
+
+
+</body>
+
+</html>
